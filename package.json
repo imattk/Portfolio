@@ -1,0 +1,14 @@
+{
+  "name": "new-project-scroll-trans",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-watch": "^5.0.1"
+  }
+}
