@@ -30,7 +30,7 @@ body {
     height: 75vh;
    padding-top: 150px;
     background: rgb(189, 192, 194) url(me12.png);
-    
+    overflow-y: hidden;
     width: 100vw;
     background-size: contain;
     background-repeat: no-repeat;
@@ -50,6 +50,7 @@ body {
     margin: 0 auto;
     justify-content: center;
     align-items: center;
+    overflow-y: hidden;
   }
   .home-about h3{
       padding-left: 25%;
