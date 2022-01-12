@@ -6,7 +6,6 @@ font-family: 'DM Serif Display', serif;
 }
 body {
     margin: 0;
-    
   }
 
 .navbar {
@@ -43,10 +42,6 @@ body {
   }
   .home-int h1{
     font-size: 5rem;
-    overflow-y: hidden;
-  }
-  .home-int h4{
-  overflow-y: hidden;
   }
   .home-about {
     padding: 25px;
@@ -55,14 +50,13 @@ body {
     justify-content: center;
     align-items: center;
     overflow-y: hidden;
+    
   }
   .home-about h3{
       padding-left: 25%;
       align-items: center;
       justify-content: center;
       font-size: 50px;
-      overflow-y: hidden;
-
   }
   .fade-in {
     opacity: 0;
@@ -74,6 +68,8 @@ body {
   }
   .columns {
     display: flex;
+    width: 100%;
+    padding-right: 25px;
   }
   
   .col + .col {
@@ -82,9 +78,10 @@ body {
   
   .more-stuff-grid {
     background: #f4f4f4;
-    padding: 4em 0;
+    padding-right: 25px;
     display: grid;
     grid-gap: 2em;
+    justify-content: center;
     align-items: center;
     grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(1em, 1fr);
   }
@@ -116,6 +113,50 @@ body {
   transform: translateX(0);
   opacity: 1;
 }
+.from-left, p{
+  background-color: #f4f4f4;
+  opacity: 2;
+}
+.from-right.appear, p{
+  background-color: #f4f4f4;
+  background: #f4f4f4;
+  opacity: 2;
+}
+
+@media (max-width: 770px) {
+  .home-about{
+    width: 100vw;
+    overflow: hidden;
+  }
+  .home-int h1{
+    font-size: 4rem;
+    padding-top: 450px;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+  }
+  .home-int h4{
+    color: rgb(242, 243, 243);
+    overflow: hidden;
+    font-size: 2rem;
+  }
+  p{
+    font-size: 1.2rem;
+  }
+  .from-right {
+    width: 90vw;
+    grid-column: 2 / 4;
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+    padding: 25px;
+  }
+  .from-left {
+    width: 90vw;
+    grid-column: 2 / 4;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    padding: 25px;
+  }
+}
 @media (max-width: 450px) {
   *{
     width: 100%;
@@ -130,15 +171,15 @@ body {
     font-size: 4rem;
     padding-top: 350px;
     color: rgb(255, 255, 255);
-    overflow-y: hidden;
+    overflow: hidden;
   }
   .home-int h4{
     color: rgb(242, 243, 243);
-    overflow-y: hidden;
+    overflow: hidden;
   }
   .home-about{
     width: 100vw;
-    overflow-y: hidden;
+    overflow: hidden;
   }
   
   .from-right {
