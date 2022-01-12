@@ -113,15 +113,7 @@ body {
   transform: translateX(0);
   opacity: 1;
 }
-.from-left, p{
-  background-color: #f4f4f4;
-  opacity: 2;
-}
-.from-right.appear, p{
-  background-color: #f4f4f4;
-  background: #f4f4f4;
-  opacity: 2;
-}
+
 
 @media (max-width: 770px) {
   .home-about{
