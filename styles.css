@@ -2,7 +2,10 @@
 *{
   font-family: 'Cinzel', serif;
 font-family: 'DM Serif Display', serif;
-
+}
+img{
+  height: 50vh;
+  width: 28vw;
 }
 body {
     margin: 0;
@@ -94,7 +97,7 @@ body {
 
 .from-right {
   grid-column: 3 / 4;
-  -webkit-transform: translateX(50%);
+  -webkit-transform: translateX(500%);
   transform: translateX(50%);
 }
 
@@ -113,6 +116,7 @@ body {
   transform: translateX(0);
   opacity: 1;
 }
+
 
 
 @media (max-width: 770px) {
